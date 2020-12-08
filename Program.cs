@@ -5,15 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// 
+/// </summary>
 namespace IsUnique
 {
     /// <summary>
-    /// The purpose of this app is to provide different algorithms seeing if the characters in the string are unique.
+    /// Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
     /// 
     /// </summary>
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string s = "Is this string unique?";
 
@@ -27,7 +30,7 @@ namespace IsUnique
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        static bool isUnique1(string s)
+        public static bool isUnique1(string s)
         {
             foreach(char c in s)
             {
@@ -56,7 +59,7 @@ namespace IsUnique
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        static bool isUnique2(string s)
+        public static bool isUnique2(string s)
         {
             Hashtable ht = new Hashtable();
 
